@@ -1,52 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <header></header>
+  <main>
+    <form action="" aria-label="Contact form">
+      <h1>Contact Us</h1>
+      <div class="twoFields">
+        <div class="field">
+          <label for="firstName">First Name <span>*</span></label>
+          <input type="text" name="firstName" id="firstName" aria-required="true" aria-label="First name" required/>
+        </div>
+        <div class="field">
+          <label for="lastName">Last Name <span>*</span></label>
+          <input type="text" name="lastName" id="lastName" aria-required="true" aria-label="Last name" required />
+        </div>
+      </div>
+      <label for="emailAdress">Email Address <span>*</span></label>
+      <input type="email" name="emailAdress" id="emailAdress" aria-label="Email address" />
 
-  Contact Us
+      <label id="queryTypeLabel">Query Type <span>*</span></label>
+      <div role="group" aria-labelledby="queryTypeLabel" class="twoRadios">
+        <div class="query">
+          <input type="radio" name="queryType" id="queryType1" value="general" aria-label="General Enquiry"
+            required /><label for="queryType2" class="queryLabel">General Enquiry</label>
+        </div>
+        <div class="query">
+          <input type="radio" name="queryType" id="queryType2" value="support" aria-label="Support Request"
+            required /><label for="queryType2" class="queryLabel">Support Request</label>
+        </div>
+      </div>
 
-  First Name
-  This field is required
+      <label for="message">Message <span>*</span></label>
+      <input type="text" name="message" id="message" aria-label="Message" required aria-required="true" />
 
-  Last Name
-  This field is required
+      <div class="checkBoxDiv">
+        <input type="checkbox" name="checkbox" id="checkbox" aria-label="I consent to being contacted by the team"
+          required /><label for="checkbox">I consent to being contacted by the team <span>*</span></label>
+      </div>
+      <input type="submit" name="submit" id="submit" aria-label="Submit contact form" value="Submit" />
 
-  Email Address
+      <!-- This field is required
+
+  
   Please enter a valid email address
   This field is required
 
-  Query Type
-  General Enquiry
-  Support Request
+  
+  
+  
   Please select a query type
 
   Message
   This field is required
 
-  I consent to being contacted by the team
+  
   To submit this form, please consent to being contacted
 
   Submit
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Thanks for completing the form. We'll be in touch soon! -->
+    </form>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">Your Name
+        Here</a>.
+    </div>
+  </footer>
 </body>
+
 </html>

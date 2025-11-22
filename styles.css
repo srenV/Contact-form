@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    height: 100dvh;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    height: 40em;
+    width: 40em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 1em;
+}
+
+h1{
+    margin: 0;
+}
+
+.twoFields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .8em;
+}
+
+.twoRadios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .8em;
+    position: relative;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+.query{
+    border: 1px solid black;
+    border-radius: .5em;
+    padding: .7em;
+    position: relative;
+}
+
+.queryLabel {
+    margin-left: .5em;
+}
+
+
+
+#emailAdress, #firstName, #lastName{
+    height: 2.5em;
+}
+
+#emailAdress{
+    border-radius: .5em;
+    border: 1px solid;
+}
+
+input[type="text"]{
+    border-radius: .5em;
+    border: 1px solid;
+    font-size: 1em;
+}
+
+
+#message{
+    height: 6em;
+}
+
+#submit{
+    height: 3em;
+    border-radius: .5em;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+span{
+    color: hsl(169, 82%, 27%);
+}
+
+
+
+
+
