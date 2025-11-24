@@ -20,10 +20,11 @@ form{
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    height: 40em;
+    height: 42em;
     width: 40em;
     padding: 2em;
     border-radius: 1em;
+    gap: 1em;
 }
 
 
@@ -52,39 +53,55 @@ h1{
 .field{
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.field label{
+    position: relative;
+    top: -.5em;
 }
 
 .query{
     border: 1px solid black;
     border-radius: .5em;
-    padding: .7em;
+    padding: .9em;
     position: relative;
+    margin-bottom: .5em;
 }
 
 .queryLabel {
     margin-left: .5em;
 }
 
+.checkBoxDiv{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
+#queryTypeLabel{
+    position: relative;
+    top: .5em;
+}
 
 #emailAdress, #firstName, #lastName{
-    height: 2.5em;
+    height: 3em;
+    font-size: 1em;
+    border-radius: .5em;
+    border: 1px solid;
 }
 
 #emailAdress{
     border-radius: .5em;
     border: 1px solid;
+    
 }
-
-input[type="text"]{
-    border-radius: .5em;
-    border: 1px solid;
-    font-size: 1em;
-}
-
 
 #message{
-    height: 6em;
+    height: 7em;
+    border-radius: .5em;
+    resize: none;
+    font-size: 1em;
 }
 
 #submit{
@@ -97,11 +114,79 @@ input[type="text"]{
     font-weight: 600;
 }
 
+#submit:hover{
+    background-color: hsla(169, 82%, 27%, 0.769);
+}
+
 span{
     color: hsl(169, 82%, 27%);
 }
 
+/* ERROR Messages */
 
+.errorMsgFirst {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+}
+
+.errorMsgLast {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+}
+
+.errorMsgMsg{
+    position: absolute;
+    top: -1.5em;
+    right: 0;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+}
+
+.errorMsgQuery{
+    position: absolute;
+    top: -1.5em;
+    right: 0;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+}
+
+.errorMsgMail{
+    position: absolute;
+    top: -1.5em;
+    right: 0;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+}
+
+.errorMsgCheck{
+    position: absolute;
+    top: -1.5em;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+}
+
+
+/* Footer */
+
+.attribution{
+    color: hsl(169, 82%, 27%);
+}
+
+.attribution a{
+    text-decoration: none;
+}
 
 
 

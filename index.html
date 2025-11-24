@@ -24,26 +24,32 @@
 <body>
   <header></header>
   <main>
-    <form action="" aria-label="Contact form">
+    <form action="#" aria-label="Contact form">
       <h1>Contact Us</h1>
       <div class="twoFields">
         <div class="field">
           <label for="firstName">First Name <span>*</span></label>
           <input type="text" name="firstName" id="firstName" aria-required="true" aria-label="First name" required/>
+          <span class="errorMsgFirst">This field is required</span>
         </div>
         <div class="field">
           <label for="lastName">Last Name <span>*</span></label>
           <input type="text" name="lastName" id="lastName" aria-required="true" aria-label="Last name" required />
+          <span class="errorMsgLast">This field is required</span>
         </div>
       </div>
-      <label for="emailAdress">Email Address <span>*</span></label>
-      <input type="email" name="emailAdress" id="emailAdress" aria-label="Email address" />
+      <div class="field">
+        <label for="emailAdress">Email Address <span>*</span></label>
+        <input type="email" name="emailAdress" id="emailAdress" aria-label="Email address" required/>
+        <span class="errorMsgMail">This field is required</span>
+      </div>
 
       <label id="queryTypeLabel">Query Type <span>*</span></label>
       <div role="group" aria-labelledby="queryTypeLabel" class="twoRadios">
+        <span class="errorMsgQuery">Please select a query type</span>
         <div class="query">
           <input type="radio" name="queryType" id="queryType1" value="general" aria-label="General Enquiry"
-            required /><label for="queryType2" class="queryLabel">General Enquiry</label>
+            required /><label for="queryType1" class="queryLabel">General Enquiry</label>
         </div>
         <div class="query">
           <input type="radio" name="queryType" id="queryType2" value="support" aria-label="Support Request"
@@ -51,14 +57,20 @@
         </div>
       </div>
 
-      <label for="message">Message <span>*</span></label>
-      <input type="text" name="message" id="message" aria-label="Message" required aria-required="true" />
+      
+      <div class="field">
+        <label for="message">Message <span>*</span></label>
+        <textarea name="message" id="message" aria-label="Message" required></textarea>
+        <span class="errorMsgMsg">This field is required</span>
+      </div>
+      
 
       <div class="checkBoxDiv">
         <input type="checkbox" name="checkbox" id="checkbox" aria-label="I consent to being contacted by the team"
           required /><label for="checkbox">I consent to being contacted by the team <span>*</span></label>
+        <span class="errorMsgCheck">To submit this form, please consent to being contacted</span>
       </div>
-      <input type="submit" name="submit" id="submit" aria-label="Submit contact form" value="Submit" />
+      <button type="submit" id="submit" aria-label="Submit contact form">Submit</button>
 
       <!-- This field is required
 
@@ -86,8 +98,7 @@
   <footer>
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">Your Name
-        Here</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/srenV">Soeren Timo Voigt</a>.
     </div>
   </footer>
 </body>
