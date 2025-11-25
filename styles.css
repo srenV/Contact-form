@@ -225,7 +225,8 @@ span{
 
 @media (max-width: 600px) {
     body{
-        margin: 6em;
+        padding: 2em;
+        min-height: min-content;
     }
 
     form{
