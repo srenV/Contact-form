@@ -6,6 +6,8 @@ const emailAdress = document.getElementById('emailAdress')
 const message = document.getElementById('message')
 const radios = document.querySelectorAll('input[type="radio"]')
 const checkbox = document.getElementById('checkbox')
+const dismissBtn = document.querySelector('.okay')
+const hidden = document.querySelector('.hidden')
 
 //ERROR Messages
 const errorMsgFirst = document.querySelector('.errorMsgFirst')
@@ -99,10 +101,21 @@ submitBtn.addEventListener('click', (e) => {
         checkbox.parentElement.style.color = ''
         
         form.reset()
-        submitBtn.textContent = "Thanks for completing the form. We'll be in touch soon!"
-
-        alert("Message sent! We'll be in touch soon.");
+        hidden.style.display = 'flex'
+        form.style.filter = 'blur(.5em)'
 
     }
     
 })
+
+dismissBtn.addEventListener('click', () =>{
+    hidden.style.display = 'none'
+    form.style.filter = 'none'
+})
+
+form.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && document.activeElement !== submit) {
+    e.preventDefault();
+  }
+});
+
