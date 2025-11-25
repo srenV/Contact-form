@@ -179,7 +179,7 @@ span{
 
 .errorMsgMsg{
     position: absolute;
-    top: -1.5em;
+    top: 0;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -197,7 +197,7 @@ span{
 
 .errorMsgMail{
     position: absolute;
-    top: -1.5em;
+    top: 0;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -225,8 +225,8 @@ span{
 
 @media (max-width: 600px) {
     body{
-        padding: 2em;
-        min-height: min-content;
+        margin: 4em;
+        min-height: fit-content;
     }
 
     form{
