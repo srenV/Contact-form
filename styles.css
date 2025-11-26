@@ -20,13 +20,14 @@ form{
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    height: 42em;
-    width: 40em;
+    height: 50em;
+    width: 50em;
     padding: 2em;
     border-radius: 1em;
     gap: 1em;
     filter: none;
 }
+
 
 
 footer {
@@ -80,16 +81,18 @@ h1{
     position: relative;
 }
 
+
 #queryTypeLabel{
     position: relative;
     top: .5em;
 }
 
 #emailAdress, #firstName, #lastName{
-    height: 3em;
-    font-size: 1em;
+    height: 2.5em;
+    font-size: 1.5em;
     border-radius: .5em;
     border: 1px solid;
+    padding: .5em;
 }
 
 #emailAdress{
@@ -99,10 +102,12 @@ h1{
 }
 
 #message{
-    height: 7em;
+    padding: .5em;
+    height: 6em;
     border-radius: .5em;
     resize: none;
-    font-size: 1em;
+    border: 1px solid;
+    font-size: 1.5em;
 }
 
 #submit{
@@ -161,7 +166,7 @@ span{
 
 .errorMsgFirst {
     position: absolute;
-    top: 0;
+    bottom: -1.5em;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -170,7 +175,7 @@ span{
 
 .errorMsgLast {
     position: absolute;
-    top: 0;
+    bottom: -1.5em;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -179,7 +184,7 @@ span{
 
 .errorMsgMsg{
     position: absolute;
-    top: 0;
+    bottom: -1.5em;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -188,7 +193,7 @@ span{
 
 .errorMsgQuery{
     position: absolute;
-    top: -1.5em;
+    bottom: -1em;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -197,7 +202,7 @@ span{
 
 .errorMsgMail{
     position: absolute;
-    top: 0;
+    bottom: -1.5em;
     right: 0;
     color: red;
     font-size: 0.75em;
@@ -206,7 +211,7 @@ span{
 
 .errorMsgCheck{
     position: absolute;
-    top: -1.5em;
+    bottom: -1.5em;
     color: red;
     font-size: 0.75em;
     display: none;
@@ -282,15 +287,16 @@ span{
     }
 
     .errorMsgCheck{
-    top: -2em;
+    bottom: -1.5em;
     font-size: .7em;
+    right: 0;
 }
     .errorMsgMsg{
-        top: 0;
+        bottom: -1.5em;
     }
 
     .errorMsgMail{
-        top: 0;
+        bottom: -1.5em;
     }
 
 
