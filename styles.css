@@ -13,6 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
+    color: hsl(186, 15%, 59%);
 }
 
 form{
@@ -20,8 +21,8 @@ form{
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    height: 50em;
-    width: 50em;
+    height: 48em;
+    width: 48em;
     padding: 2em;
     border-radius: 1em;
     gap: 1em;
@@ -37,6 +38,7 @@ footer {
 
 h1{
     margin: 0;
+    color: black;
 }
 
 .twoFields{
@@ -64,7 +66,7 @@ h1{
 }
 
 .query{
-    border: 1px solid black;
+    border: 1px solid hsl(186, 15%, 59%);
     border-radius: .5em;
     padding: .9em;
     position: relative;
@@ -91,13 +93,13 @@ h1{
     height: 2.5em;
     font-size: 1.5em;
     border-radius: .5em;
-    border: 1px solid;
+    border: 1px solid hsl(186, 15%, 59%);
     padding: .5em;
 }
 
 #emailAdress{
     border-radius: .5em;
-    border: 1px solid;
+    border: 1px solid hsl(186, 15%, 59%);
     
 }
 
@@ -106,7 +108,7 @@ h1{
     height: 6em;
     border-radius: .5em;
     resize: none;
-    border: 1px solid;
+    border: 1px solid hsl(186, 15%, 59%);
     font-size: 1.5em;
 }
 
