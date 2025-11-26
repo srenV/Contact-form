@@ -13,7 +13,6 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
-    color: hsl(186, 15%, 59%);
 }
 
 form{
@@ -22,7 +21,7 @@ form{
     justify-content: space-around;
     background-color: white;
     height: 48em;
-    width: 48em;
+    width: 46em;
     padding: 2em;
     border-radius: 1em;
     gap: 1em;
@@ -105,15 +104,19 @@ h1{
 
 #message{
     padding: .5em;
-    height: 6em;
+    height: 5em;
     border-radius: .5em;
     resize: none;
     border: 1px solid hsl(186, 15%, 59%);
     font-size: 1.5em;
 }
 
+#checkBoxLabel {
+    padding-left: 1em;
+}
+
 #submit{
-    height: 3em;
+    height: 3.5em;
     border-radius: .5em;
     border: none;
     background-color: hsl(169, 82%, 27%);
